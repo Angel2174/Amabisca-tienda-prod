@@ -31,7 +31,7 @@ app.use('/create-payment-intent', paymentsIntentRoutes);
 app.use('/order', ordersRoutes);
 
 // Rutas
-app.use(express.static(path.join(__dirname, 'client')));
+app.use(express.static(path.join(__dirname, 'Client')));
 app.get('/', (req, res) => {
   res.send('HOME!');
 });
